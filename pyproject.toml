@@ -1,0 +1,22 @@
+[project]
+name = "base-fellowship"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "omuili", email = "olanrewaju.muili@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "torch>=2.14.1",
+    "torchaudio>=2.11.0",
+    "torchvision>=0.29.1",
+    "transformers>=5.18.0",
+]
+
+[project.scripts]
+base-fellowship = "base_fellowship:main"
+
+[build-system]
+requires = ["uv_build>=0.12.12,<0.13.0"]
+build-backend = "uv_build"
